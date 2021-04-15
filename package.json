@@ -1,0 +1,22 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "description": "mern ecommerce app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarunsinghdev/mern-ecommerce.git"
+  },
+  "author": "Tarun Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarunsinghdev/mern-ecommerce/issues"
+  },
+  "homepage": "https://github.com/tarunsinghdev/mern-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
