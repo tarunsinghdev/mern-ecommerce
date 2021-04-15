@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "mern ecommerce app",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node server/server",
     "server": "nodemon server/server",
