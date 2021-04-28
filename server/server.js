@@ -4,17 +4,20 @@ import colors from 'colors';
 
 import connectDB from './config/database.js';
 import productRoutes from './routes/productRoutes.js';
-import { errorHandler, notFound } from './error/errorMiddleware.js';
+import userRoutes from './routes/userRoutes.js';
+import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 
 const app = express();
+app.use(express.json()); //json() is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
 
 app.get('/', (req, res) => {
   res.send('Api is running...');
 });
 
 app.use('/api/products', productRoutes);
+app.use('/api/users', userRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
