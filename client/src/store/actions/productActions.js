@@ -35,7 +35,7 @@ export const listProductDetail = (id) => {
     } catch (error) {
       dispatch({
         type: PRODUCT_DETAIL_FAIL,
-        error:
+        payload:
           error.response && error.response.data.message
             ? error.response.data.message
             : error.message,
