@@ -2,7 +2,7 @@ import {
   ORDER_CREATE_FAIL,
   ORDER_CREATE_REQUEST,
   ORDER_CREATE_SUCCESS,
-} from '../actions/actionTypes';
+} from '../../actions/actionTypes';
 
 const initialState = {
   loading: false,
