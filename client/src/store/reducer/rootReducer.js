@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import cartReducer from './cartReducer';
+import orderCreateReducer from './orderReducer';
 import productDetailReducer from './productDetailReducer';
 import productListReducer from './productListReducer';
 import userDetailReducer from './userReducer/userDetailReducer';
@@ -16,6 +17,7 @@ const rootReducer = () =>
     userRegister: userRegisterReducer,
     userDetail: userDetailReducer,
     userUpdateProfile: userUpdateProfileReducer,
+    orderCreate: orderCreateReducer,
   });
 
 export default rootReducer;
