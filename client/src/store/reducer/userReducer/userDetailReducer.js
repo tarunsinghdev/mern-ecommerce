@@ -1,6 +1,7 @@
 import {
   USER_DETAIL_FAIL,
   USER_DETAIL_REQUEST,
+  USER_DETAIL_RESET,
   USER_DETAIL_SUCCESS,
 } from '../../actions/actionTypes';
 
@@ -32,6 +33,10 @@ const userDetailReducer = (state = initialState, { type, payload }) => {
         error: payload,
       };
     }
+    case USER_DETAIL_RESET:
+      return {
+        user: {},
+      };
     default:
       return state;
   }

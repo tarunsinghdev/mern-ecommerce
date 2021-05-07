@@ -2,6 +2,7 @@ import {
   ORDER_LIST_MY_FAIL,
   ORDER_LIST_MY_REQUEST,
   ORDER_LIST_MY_SUCCESS,
+  ORDER_LIST_MY_RESET,
 } from '../../actions/actionTypes';
 
 const initialState = {
@@ -29,6 +30,8 @@ const orderListMyReducer = (state = initialState, { type, payload }) => {
         loading: false,
         error: payload,
       };
+    case ORDER_LIST_MY_RESET:
+      return { orders: [] };
     default:
       return state;
   }
