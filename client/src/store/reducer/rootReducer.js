@@ -6,6 +6,7 @@ import orderListMyReducer from './orderReducer/orderListMyReducer';
 import orderPayReducer from './orderReducer/orderPayReducer';
 import productDetailReducer from './productDetailReducer';
 import productListReducer from './productListReducer';
+import userDeleteReducer from './userReducer/userDeleteReducer';
 import userDetailReducer from './userReducer/userDetailReducer';
 import userListReducer from './userReducer/userListReducer';
 import userLoginReducer from './userReducer/userLoginReducer';
@@ -22,6 +23,7 @@ const rootReducer = () =>
     userDetail: userDetailReducer,
     userUpdateProfile: userUpdateProfileReducer,
     userList: userListReducer,
+    userDelete: userDeleteReducer,
     orderCreate: orderCreateReducer,
     orderDetails: orderDetailsReducer,
     orderPay: orderPayReducer,

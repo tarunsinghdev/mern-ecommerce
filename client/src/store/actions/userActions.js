@@ -1,6 +1,9 @@
 import axios from 'axios';
 import {
   ORDER_LIST_MY_RESET,
+  USER_DELETE_FAIL,
+  USER_DELETE_REQUEST,
+  USER_DELETE_SUCCESS,
   USER_DETAIL_FAIL,
   USER_DETAIL_REQUEST,
   USER_DETAIL_RESET,
@@ -155,6 +158,30 @@ export const listUsers = () => {
     } catch (error) {
       dispatch({
         type: USER_LIST_FAIL,
+        payload:
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message,
+      });
+    }
+  };
+};
+
+export const deleteUser = (id) => {
+  return async (dispatch, getState) => {
+    try {
+      dispatch({ type: USER_DELETE_REQUEST });
+      const config = {
+        headers: {
+          Authorization: `Bearer ${getState().userLogin.userInfo.token}`,
+        },
+      };
+      const response = await axios.delete(`/api/users/${id}`, config);
+
+      dispatch({ type: USER_DELETE_SUCCESS });
+    } catch (error) {
+      dispatch({
+        type: USER_DELETE_FAIL,
         payload:
           error.response && error.response.data.message
             ? error.response.data.message
