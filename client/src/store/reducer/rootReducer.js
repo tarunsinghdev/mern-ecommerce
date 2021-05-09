@@ -7,6 +7,7 @@ import orderPayReducer from './orderReducer/orderPayReducer';
 import productDetailReducer from './productReducer/productDetailReducer';
 import productListReducer from './productReducer/productListReducer';
 import productDeleteReducer from './productReducer/productDeleteReducer';
+import productCreateReducer from './productReducer/productCreateReducer';
 import userDeleteReducer from './userReducer/userDeleteReducer';
 import userDetailReducer from './userReducer/userDetailReducer';
 import userListReducer from './userReducer/userListReducer';
@@ -20,6 +21,7 @@ const rootReducer = () =>
     productList: productListReducer,
     productDetail: productDetailReducer,
     productDelete: productDeleteReducer,
+    productCreate: productCreateReducer,
     cart: cartReducer,
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
