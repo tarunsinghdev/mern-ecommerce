@@ -2,7 +2,7 @@ import {
   PRODUCT_LIST_SUCCESS,
   PRODUCT_LIST_REQUEST,
   PRODUCT_LIST_FAIL,
-} from '../actions/actionTypes';
+} from '../../actions/actionTypes';
 
 const initialState = {
   products: [],

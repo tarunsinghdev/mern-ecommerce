@@ -2,7 +2,7 @@ import {
   PRODUCT_DETAIL_FAIL,
   PRODUCT_DETAIL_REQUEST,
   PRODUCT_DETAIL_SUCCESS,
-} from '../actions/actionTypes';
+} from '../../actions/actionTypes';
 
 const initialState = {
   product: {
