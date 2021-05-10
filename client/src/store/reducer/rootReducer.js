@@ -15,6 +15,7 @@ import userLoginReducer from './userReducer/userLoginReducer';
 import userRegisterReducer from './userReducer/userRegisterReducer';
 import userUpdateProfileReducer from './userReducer/userUpdateProfileReducer';
 import userUpdateReducer from './userReducer/userUpdateReducer';
+import productUpdateReducer from './productReducer/productUpdateReducer';
 
 const rootReducer = () =>
   combineReducers({
@@ -22,6 +23,7 @@ const rootReducer = () =>
     productDetail: productDetailReducer,
     productDelete: productDeleteReducer,
     productCreate: productCreateReducer,
+    productUpdate: productUpdateReducer,
     cart: cartReducer,
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
