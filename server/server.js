@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
 import colors from 'colors';
+import morgan from 'morgan';
 
 import connectDB from './config/database.js';
 import productRoutes from './routes/productRoutes.js';
@@ -13,6 +14,11 @@ import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 dotenv.config();
 
 const app = express();
+
+if (process.env.NODE_ENV) {
+  app.use(morgan('dev'));
+}
+
 app.use(express.json()); //json() is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
 
 app.get('/', (req, res) => {
