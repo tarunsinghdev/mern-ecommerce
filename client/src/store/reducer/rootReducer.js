@@ -19,6 +19,7 @@ import productUpdateReducer from './productReducer/productUpdateReducer';
 import orderListReducer from './orderReducer/orderListReducer';
 import orderDeliverReducer from './orderReducer/orderDeliverReducer';
 import productCreateReviewReducer from './productReducer/productCreateReviewReducer';
+import productTopRatedReducer from './productReducer/ProductTopRatedReducer';
 
 const rootReducer = () =>
   combineReducers({
@@ -28,6 +29,7 @@ const rootReducer = () =>
     productCreate: productCreateReducer,
     productUpdate: productUpdateReducer,
     productCreateReview: productCreateReviewReducer,
+    productTopRated: productTopRatedReducer,
     cart: cartReducer,
     userLogin: userLoginReducer,
     userRegister: userRegisterReducer,
