@@ -32,11 +32,26 @@ h2 {
 }
 .carousel img {
   height: 300px;
-  padding: 30px;
-  margin: 40px;
+  padding: 50px;
+  margin: 30px 0;
   border-radius: 30%;
   border: dodgerblue;
+  justify-content: center;
 }
 .carousel a {
   margin: 0 auto;
+}
+.img-modify {
+  width: 100%;
+  height: 100%;
+}
+.pagination {
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .carousel-caption h2 {
+    margin: -12px;
+    font-size: medium;
+  }
 }

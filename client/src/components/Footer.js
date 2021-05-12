@@ -6,7 +6,16 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col className="text-center py-3">Copyright &copy; eMart</Col>
+          <Col className="text-center py-3">
+            Copyright &copy; eMart | Built by{' '}
+            <a
+              href="https://tarunsingh.surge.sh/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Tarun Singh
+            </a>
+          </Col>
         </Row>
       </Container>
     </footer>

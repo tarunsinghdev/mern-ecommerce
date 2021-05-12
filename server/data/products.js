@@ -1,5 +1,140 @@
 const products = [
   {
+    name: 'Apple - AirPods Max - Silver',
+    image: '/images/airpodsmax.jpeg',
+    description:
+      'AirPods Max reimagine over-ear headphones. An Apple-designed dynamic driver provides immersive high-fidelity audio. Every detail, from canopy to cushions, has been designed for an exceptional fit. Active Noise Cancellation blocks outside noise, while Transparency mode lets it in. And spatial audio with dynamic head tracking provides theater-like sound that surrounds you.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 549,
+    countInStock: 15,
+    rating: 0,
+    numReviews: 0,
+  },
+
+  {
+    name: 'SteelSeries - Apex Pro Wired Gaming Mechanical Keyboard- Black',
+    image: '/images/keyboard.jpeg',
+    description:
+      'Upgrade your accuracy with this SteelSeries Apex Pro mechanical gaming keyboard. Advanced OmniPoint switches make inputs feel fast and fluid, and the adjustable design lets you change the actuation distance to suit your play style. This SteelSeries Apex Pro mechanical gaming keyboard has a sturdy aluminum alloy frame that stands up to heavy use.',
+    brand: 'SteelSeries',
+    category: 'Electronics',
+    price: 179.99,
+    countInStock: 20,
+    rating: 0,
+    numReviews: 0,
+  },
+
+  {
+    name: 'Bella Pro Series - 8-qt. Touchscreen Air Fryer',
+    image: '/images/airfryer.jpeg',
+    description:
+      'Cook up healthy meals with this Bella Pro Series 8-qt. Touchscreen Air Fryer. The built-in touchscreen makes selecting settings fast and intuitive, while the large capacity lets you cook large meals at once.',
+    brand: 'Bella',
+    category: 'Electronics',
+    price: 79.99,
+    countInStock: 8,
+    rating: 3.9,
+    numReviews: 5,
+  },
+  {
+    name: 'Apple Watch Series 6 (GPS) 44mm Space Gray',
+    image: '/images/applewatch.jpeg',
+    description:
+      'Apple Watch Series 6 lets you measure your blood oxygen level with a revolutionary new sensor and app.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 429,
+    countInStock: 10,
+    rating: 4.9,
+    numReviews: 28,
+  },
+  {
+    name: 'Apple - AirTag - Silver',
+    image: '/images/airtag.jpeg',
+    description:
+      'AirTag. Keep track of your keys, wallet, luggage, backpack, and more, all in the Find My app. Play a sound on the built-in speaker, or say "Hey Siri, find my gym bag."',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 29,
+    countInStock: 25,
+    rating: 5,
+    numReviews: 0,
+  },
+  {
+    name: 'Nintendo - Switch 32GB Console - Gray Joy-Con',
+    image: '/images/nintendo.jpeg',
+    description:
+      'Introducing Nintendo Switch, the new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home console experience anytime, anywhere.',
+    brand: 'Nintendo',
+    category: 'Electronics',
+    price: 299.99,
+    countInStock: 13,
+    rating: 4.4,
+    numReviews: 1,
+  },
+  {
+    name: 'GoPro - HERO9 Black 5K and 20 MP Streaming Action Camera - Black',
+    image: '/images/gopro.jpeg',
+    description:
+      'Record captivating vlogs and take brilliant photos with this black GoPro HERO9 camera. The high-quality CMOS sensor captures 5K video and up to 20.0MP images for stunning clarity, and support for a microSD card offers customizable storage space. This water-resistant GoPro HERO9 camera allows for use at the beach or pool.',
+    brand: 'GoPro',
+    category: 'Electronics',
+    price: 399.99,
+    countInStock: 22,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: '24" iMac® with Retina 4.5K display - Apple M1',
+    image: '/images/imac.jpeg',
+    description:
+      'You’ve never seen a computer like this before. With a strikingly thin design made possible by the Apple M1 chip.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 1299.99,
+    countInStock: 48,
+    rating: 4.1,
+    numReviews: 2,
+  },
+  {
+    name: 'Microsoft - Surface Go 2 - 10.5" Touch-Screen - Intel Pentium Gold - 4GB - 64GB SSD - Device Only - Platinum',
+    image: '/images/surfacepro.jpeg',
+    description:
+      'Your perfect everyday companion. New 10.5" Surface Go 2 is perfect for keeping up and winding down - delivering tablet portability with laptop versatility, long battery life, a stunning touchscreen, and Windows security for the whole family. Browse, shop, and manage email with ease, relax with your favorite TV shows, and much more.',
+    brand: 'Microsoft',
+    category: 'Electronics',
+    price: 399.99,
+    countInStock: 15,
+    rating: 0,
+    numReviews: 0,
+  },
+
+  {
+    name: 'Google - Chromecast Streaming Media Player - Charcoal',
+    image: '/images/chromecast.jpeg',
+    description:
+      'Stream content from your device to the largest screen in the room with Google Chromecast. It plugs into any television with an HDMI port, making it easy to cast images and audio to a format everyone can enjoy. Google Chromecast works with a variety of laptops as well as Apple and Android devices.',
+    brand: 'Google',
+    category: 'Electronics',
+    price: 29.99,
+    countInStock: 50,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
+    name: 'NVIDIA - SHIELD Android TV Pro - 16GB',
+    image: '/images/nvidia.jpeg',
+    description:
+      'Enjoy fast online streaming with this NVIDIA SHIELD TV media player. The 4K HDR capability provides visual quality, while Dolby Atmos and DTS-X surround sound offer an immersive watching and listening experience. This NVIDIA SHIELD TV media player supports unlimited applications for movies, shows, games and music of your choosing, providing endless entertainment.',
+    brand: 'Nvidia',
+    category: 'Electronics',
+    price: 199.99,
+    countInStock: 20,
+    rating: 0,
+    numReviews: 0,
+  },
+  {
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
     description:
@@ -44,7 +179,7 @@ const products = [
     category: 'Electronics',
     price: 399.99,
     countInStock: 11,
-    rating: 5,
+    rating: 3.6,
     numReviews: 12,
   },
   {
