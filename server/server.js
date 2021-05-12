@@ -15,15 +15,11 @@ dotenv.config();
 
 const app = express();
 
-if (process.env.NODE_ENV) {
+if (process.env.NODE_ENV == 'development') {
   app.use(morgan('dev'));
 }
 
 app.use(express.json()); //json() is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
-
-app.get('/', (req, res) => {
-  res.send('Api is running...');
-});
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
@@ -36,6 +32,18 @@ app.use('/api/config/paypal', (req, res) =>
 
 const __dirname = path.resolve(); //since we're using es modules syntax
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  );
+} else {
+  app.get('/', (req, res) => {
+    res.send('Api is running...');
+  });
+}
 
 app.use(notFound);
 app.use(errorHandler);
