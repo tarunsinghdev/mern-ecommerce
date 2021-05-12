@@ -1,12 +1,10 @@
 # 🛒 E-MART
 
-🛒 eMart - Your shopping destination
+🛒 eMart - Your one-stop shopping destination
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/tarunsinghdev/mern-ecommerce/pulls)
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://shop-on-emart.herokuapp.com/)
 [![Build passing](https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square)](https://shop-on-emart.herokuapp.com/)&nbsp;![Made with Love in India](https://madewithlove.org.in/badge.svg)
-
-**Stay updated with our covid-tracker.**
 
 ### Live Website : [eMart](https://shop-on-emart.herokuapp.com/)
 
@@ -41,7 +39,7 @@
 
 ![image](https://user-images.githubusercontent.com/25122604/118008158-74a7ee80-b36a-11eb-8ffc-e5f2525083df.png)
 
-### Product Page(Add or Edit - Admin only)
+### Product Page(Add/Edit - Admin only)
 
 ![image](https://user-images.githubusercontent.com/25122604/118008755-03b50680-b36b-11eb-987d-5e2dd77aa482.png)
 
