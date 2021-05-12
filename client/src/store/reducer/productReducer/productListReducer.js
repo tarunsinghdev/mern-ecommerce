@@ -6,6 +6,8 @@ import {
 
 const initialState = {
   products: [],
+  pages: null,
+  page: null,
   loading: false,
   error: null,
 };
@@ -20,7 +22,9 @@ const productListReducer = (state = initialState, { type, payload }) => {
     case PRODUCT_LIST_SUCCESS:
       return {
         ...state,
-        products: payload,
+        products: payload.products,
+        pages: payload.pages,
+        page: payload.page,
         loading: false,
       };
     case PRODUCT_LIST_FAIL:

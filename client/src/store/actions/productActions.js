@@ -20,11 +20,13 @@ import {
   PRODUCT_UPDATE_SUCCESS,
 } from './actionTypes';
 
-export const listProducts = () => {
+export const listProducts = (keyword = '', pageNumber = '') => {
   return async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_LIST_REQUEST });
-      const response = await axios.get('/api/products');
+      const response = await axios.get(
+        `/api/products?keyword=${keyword}&pageNumber=${pageNumber}`
+      );
       dispatch({ type: PRODUCT_LIST_SUCCESS, payload: response.data });
     } catch (error) {
       dispatch({
