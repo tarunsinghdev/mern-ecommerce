@@ -37,7 +37,6 @@ const PlaceOrderScreen = ({ history }) => {
   }, [history, success]);
 
   const placeOrderHandler = () => {
-    console.log('order');
     dispatch(
       createOrder({
         orderItems: cart.cartItems,
