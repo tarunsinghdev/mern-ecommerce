@@ -8,6 +8,10 @@
 
 ### Live Website : [eMart](https://shop-on-emart.herokuapp.com/)
 
+> **User Credentials** <br/> **Email** : tom@gmail.com <br /> **Password** : 123456
+
+> **Paypal Credentials** <br/> **Email** : tarun@emart.com <br/> **Password** : tarun@emart
+
 ## ⭐️ Features
 
 - Authentication
