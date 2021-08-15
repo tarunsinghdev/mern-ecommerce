@@ -1,7 +1,7 @@
 const products = [
   {
     name: 'Apple - AirPods Max - Silver',
-    image: '/images/airpodsmax.jpeg',
+    image: '/images/airpodsmax.webp',
     description:
       'AirPods Max reimagine over-ear headphones. An Apple-designed dynamic driver provides immersive high-fidelity audio. Every detail, from canopy to cushions, has been designed for an exceptional fit. Active Noise Cancellation blocks outside noise, while Transparency mode lets it in. And spatial audio with dynamic head tracking provides theater-like sound that surrounds you.',
     brand: 'Apple',
@@ -14,7 +14,7 @@ const products = [
 
   {
     name: 'SteelSeries - Apex Pro Wired Gaming Mechanical Keyboard- Black',
-    image: '/images/keyboard.jpeg',
+    image: '/images/keyboard.webp',
     description:
       'Upgrade your accuracy with this SteelSeries Apex Pro mechanical gaming keyboard. Advanced OmniPoint switches make inputs feel fast and fluid, and the adjustable design lets you change the actuation distance to suit your play style. This SteelSeries Apex Pro mechanical gaming keyboard has a sturdy aluminum alloy frame that stands up to heavy use.',
     brand: 'SteelSeries',
@@ -27,7 +27,7 @@ const products = [
 
   {
     name: 'Bella Pro Series - 8-qt. Touchscreen Air Fryer',
-    image: '/images/airfryer.jpeg',
+    image: '/images/airfryer.webp',
     description:
       'Cook up healthy meals with this Bella Pro Series 8-qt. Touchscreen Air Fryer. The built-in touchscreen makes selecting settings fast and intuitive, while the large capacity lets you cook large meals at once.',
     brand: 'Bella',
@@ -39,7 +39,7 @@ const products = [
   },
   {
     name: 'Apple Watch Series 6 (GPS) 44mm Space Gray',
-    image: '/images/applewatch.jpeg',
+    image: '/images/applewatch.webp',
     description:
       'Apple Watch Series 6 lets you measure your blood oxygen level with a revolutionary new sensor and app.',
     brand: 'Apple',
@@ -51,7 +51,7 @@ const products = [
   },
   {
     name: 'Apple - AirTag - Silver',
-    image: '/images/airtag.jpeg',
+    image: '/images/airtag.webp',
     description:
       'AirTag. Keep track of your keys, wallet, luggage, backpack, and more, all in the Find My app. Play a sound on the built-in speaker, or say "Hey Siri, find my gym bag."',
     brand: 'Apple',
@@ -63,7 +63,7 @@ const products = [
   },
   {
     name: 'Nintendo - Switch 32GB Console - Gray Joy-Con',
-    image: '/images/nintendo.jpeg',
+    image: '/images/nintendo.webp',
     description:
       'Introducing Nintendo Switch, the new home video game system from Nintendo. In addition to providing single and multiplayer thrills at home, the Nintendo Switch system can be taken on the go so players can enjoy a full home console experience anytime, anywhere.',
     brand: 'Nintendo',
@@ -75,7 +75,7 @@ const products = [
   },
   {
     name: 'GoPro - HERO9 Black 5K and 20 MP Streaming Action Camera - Black',
-    image: '/images/gopro.jpeg',
+    image: '/images/gopro.webp',
     description:
       'Record captivating vlogs and take brilliant photos with this black GoPro HERO9 camera. The high-quality CMOS sensor captures 5K video and up to 20.0MP images for stunning clarity, and support for a microSD card offers customizable storage space. This water-resistant GoPro HERO9 camera allows for use at the beach or pool.',
     brand: 'GoPro',
@@ -87,7 +87,7 @@ const products = [
   },
   {
     name: '24" iMac® with Retina 4.5K display - Apple M1',
-    image: '/images/imac.jpeg',
+    image: '/images/imac.webp',
     description:
       'You’ve never seen a computer like this before. With a strikingly thin design made possible by the Apple M1 chip.',
     brand: 'Apple',
@@ -99,7 +99,7 @@ const products = [
   },
   {
     name: 'Microsoft - Surface Go 2 - 10.5" Touch-Screen - Intel Pentium Gold - 4GB - 64GB SSD - Device Only - Platinum',
-    image: '/images/surfacepro.jpeg',
+    image: '/images/surfacepro.webp',
     description:
       'Your perfect everyday companion. New 10.5" Surface Go 2 is perfect for keeping up and winding down - delivering tablet portability with laptop versatility, long battery life, a stunning touchscreen, and Windows security for the whole family. Browse, shop, and manage email with ease, relax with your favorite TV shows, and much more.',
     brand: 'Microsoft',
@@ -112,7 +112,7 @@ const products = [
 
   {
     name: 'Google - Chromecast Streaming Media Player - Charcoal',
-    image: '/images/chromecast.jpeg',
+    image: '/images/chromecast.webp',
     description:
       'Stream content from your device to the largest screen in the room with Google Chromecast. It plugs into any television with an HDMI port, making it easy to cast images and audio to a format everyone can enjoy. Google Chromecast works with a variety of laptops as well as Apple and Android devices.',
     brand: 'Google',
@@ -124,7 +124,7 @@ const products = [
   },
   {
     name: 'NVIDIA - SHIELD Android TV Pro - 16GB',
-    image: '/images/nvidia.jpeg',
+    image: '/images/nvidia.webp',
     description:
       'Enjoy fast online streaming with this NVIDIA SHIELD TV media player. The 4K HDR capability provides visual quality, while Dolby Atmos and DTS-X surround sound offer an immersive watching and listening experience. This NVIDIA SHIELD TV media player supports unlimited applications for movies, shows, games and music of your choosing, providing endless entertainment.',
     brand: 'Nvidia',
@@ -136,7 +136,7 @@ const products = [
   },
   {
     name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/images/airpods.jpg',
+    image: '/images/airpods.webp',
     description:
       'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
     brand: 'Apple',
@@ -148,7 +148,7 @@ const products = [
   },
   {
     name: 'iPhone 11 Pro 256GB Memory',
-    image: '/images/phone.jpg',
+    image: '/images/phone.webp',
     description:
       'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
     brand: 'Apple',
@@ -160,7 +160,7 @@ const products = [
   },
   {
     name: 'Cannon EOS 80D DSLR Camera',
-    image: '/images/camera.jpg',
+    image: '/images/camera.webp',
     description:
       'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
     brand: 'Cannon',
@@ -172,7 +172,7 @@ const products = [
   },
   {
     name: 'Sony Playstation 4 Pro White Version',
-    image: '/images/playstation.jpg',
+    image: '/images/playstation.webp',
     description:
       'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
     brand: 'Sony',
@@ -184,7 +184,7 @@ const products = [
   },
   {
     name: 'Logitech G-Series Gaming Mouse',
-    image: '/images/mouse.jpg',
+    image: '/images/mouse.webp',
     description:
       'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
     brand: 'Logitech',
@@ -196,7 +196,7 @@ const products = [
   },
   {
     name: 'Amazon Echo Dot 3rd Generation',
-    image: '/images/alexa.jpg',
+    image: '/images/alexa.webp',
     description:
       'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
     brand: 'Amazon',

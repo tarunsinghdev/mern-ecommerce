@@ -1,6 +1,7 @@
 import express from 'express';
 import multer from 'multer';
 import path from 'path';
+import sharp from 'sharp';
 
 const router = express.Router();
 
@@ -8,7 +9,7 @@ const storage = multer.diskStorage({
   destination(req, file, cb) {
     cb(null, 'uploads/');
   },
-  filename(req, file, cb) {
+  async filename(req, file, cb) {
     cb(
       null,
       `${file.originalname.split('.')[0]}-${Date.now()}${path
@@ -38,7 +39,14 @@ const upload = multer({
 });
 
 router.post('/', upload.single('image'), (req, res) => {
-  res.send(`/${req.file.path}`);
+  req.file.filename = `${req.file.destination}/converted/${
+    req.file.originalname.split('.')[0]
+  }-${Date.now()}.webp`;
+
+  sharp(req.file.path)
+    .webp({ lossless: true })
+    .toFile(req.file.filename, (err) => console.log(err));
+  res.send(`/${req.file.filename}`);
 });
 
 export default router;
